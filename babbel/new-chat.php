@@ -22,7 +22,8 @@ $query .= "VALUES (?,?,?) ";
    return;
  } else {
     mysqli_commit($dblink);
-    echo "<div class=\"alert alert-success\" role=\"alert\">Uw account is aangemaakt</div>";
+    header('Location: chat.php');
+    exit;
  }
 
 

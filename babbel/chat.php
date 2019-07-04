@@ -41,7 +41,7 @@ if ($preparedquery->errno) {
         while ($row = $result->fetch_assoc()) {
             // link to every complaint by ID
             echo $row["username"] .":   ";
-            echo $row["message"];
+            echo '<span>' .$row["message"].'</span>';
 
            
 
@@ -56,8 +56,8 @@ include("db/dbclose.php");
    
     <div class="text">
     <form  action="new-chat.php" method="POST">
-    <input id="input" name="message" type="text" placeholder="Hier je bericht" ><br>
-    <input type="submit">
+    <input id="text" name="message" type="text" placeholder="Hier je bericht" ><br>
+    <input type="submit" value="Verzenden">
     </div>
     </form>
   
