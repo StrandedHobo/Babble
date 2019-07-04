@@ -8,9 +8,9 @@
  <div id="login">
   <h2>Babbel Inlogscherm</h2>
   <form action="insertintodb.php" method="post">
-   <label>Email :</label>
+   <label>Name :</label>
    <input id="name" name="name" placeholder="name" type="text">
-   <label>email :</label>
+   <label>Email :</label>
    <input id="email" name="email" placeholder="email" type="text">
    <label>Wachtwoord :</label>
    <input id="password" name="password" placeholder="**********" type="password"><br><br>

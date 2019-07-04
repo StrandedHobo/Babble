@@ -1,30 +1,30 @@
 
 
 body{
-background-color: black;
-       } 
+background-color: #fafafa;
+}
 
 
 
 span {
-color:red
+color: #91f8ff;
 }
-h2
-{
+
+h2 {
 text-align:center;
 border-radius:10px 10px 0 0;
 margin:-10px -40px;
-padding:15px    
+padding:15px
 }
-hr
-{
+
+hr {
 border:0;
 border-bottom:1px solid;
 margin:10px -40px;
 margin-bottom:30px
 }
-#login
-{
+
+#login {
 margin: auto;
 width:450px;
 border-radius:10px;
@@ -32,8 +32,8 @@ border:2px solid #ccc;
 padding:10px 40px 25px;
 background-color:#b6e6ff;
 }
-input[type=text],input[type=password]
-{
+
+input[type=text],input[type=password] {
 width:96.5%;
 padding:10px;
 margin-top:8px;
@@ -41,8 +41,8 @@ border:1px solid #ccc;
 padding-left:5px;
 font-size:20px;
 }
-input[type=submit]
-{
+
+input[type=submit] {
 width:100%;
 background-color:#2f90ff;
 color:#fff;
@@ -52,28 +52,29 @@ font-size:20px;
 cursor:pointer;
 border-radius:5px;
 }
-#profile
-{
+
+#profile {
 padding:50px;
 border:1px dashed grey;
 font-size:20px;
 background-color:#DCE6F7
 }
-#logout
-{
+
+#logout {
 float:right;
 padding:5px;
 border:dashed 1px gray
 }
-a
-{
+
+a {
 text-decoration:none;
 color:#6495ed
 }
-i
-{
+
+i {
 color:#6495ed
 }
+
 .new {
        width:100%;
        background-color:#2f90ff;
@@ -82,5 +83,5 @@ color:#6495ed
        padding:10px;
        font-size:20px;
        cursor:pointer;
-       border-radius:5px; 
+       border-radius:5px;
 }
