@@ -1,4 +1,4 @@
-/*
+/* 
 Created by: Kenrick Beckett
 
 Name: Chat Engine
@@ -22,18 +22,18 @@ function getStateOfChat(){
 		 $.ajax({
 			   type: "POST",
 			   url: "process.php",
-			   data: {
+			   data: {  
 			   			'function': 'getState',
 						'file': file
 						},
 			   dataType: "json",
-
+			
 			   success: function(data){
 				   state = data.state;
 				   instanse = false;
 			   },
 			});
-	}
+	}	 
 }
 
 //Updates the chat
@@ -43,7 +43,7 @@ function updateChat(){
 	     $.ajax({
 			   type: "POST",
 			   url: "process.php",
-			   data: {
+			   data: {  
 			   			'function': 'update',
 						'state': state,
 						'file': file
@@ -53,7 +53,7 @@ function updateChat(){
 				   if(data.text){
 						for (var i = 0; i < data.text.length; i++) {
                             $('#chat-area').append($("<p>"+ data.text[i] +"</p>"));
-                        }
+                        }								  
 				   }
 				   document.getElementById('chat-area').scrollTop = document.getElementById('chat-area').scrollHeight;
 				   instanse = false;
@@ -68,12 +68,12 @@ function updateChat(){
 
 //send the message
 function sendChat(message, nickname)
-{
+{       
     updateChat();
      $.ajax({
 		   type: "POST",
 		   url: "process.php",
-		   data: {
+		   data: {  
 		   			'function': 'send',
 					'message': message,
 					'nickname': nickname,
